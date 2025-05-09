@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrona</title>
     <style>
-        /* Reset and Basic Styles */
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -13,40 +13,40 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
-            background-color: #f0f2f5; /* Softer background */
+            background-color: #f0f2f5; 
             color: #333;
-            display: flex; /* Use flexbox for overall page structure */
-            flex-direction: column; /* Stack header, main, footer vertically */
-            min-height: 100vh; /* Ensure body takes at least full viewport height */
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
         }
 
-        /* Header and Navigation Bar Styling */
+       
         .site-header {
-            background-color: #0056b3; /* Primary color for header */
+            background-color: #0056b3; 
             color: white;
             padding: 1rem 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky; /* Sticky header */
+            position: sticky; 
             top: 0;
             z-index: 1000;
         }
 
         .navbar {
             display: flex;
-            justify-content: space-between; /* Space out logo/title and nav links */
+            justify-content: space-between;
             align-items: center;
             width: 90%;
-            max-width: 1100px; /* Max width for navbar content */
-            margin: 0 auto; /* Center navbar content */
+            max-width: 1100px; 
+            margin: 0 auto; 
             padding: 0 1rem;
         }
 
         .nav-logo a {
             color: white;
             text-decoration: none;
-            font-size: 1.8em; /* Larger logo/title */
+            font-size: 1.8em; 
             font-weight: bold;
         }
 
@@ -56,7 +56,7 @@
         }
 
         .nav-links li {
-            margin-left: 25px; /* Spacing between nav items */
+            margin-left: 25px; 
         }
 
         .nav-links a {
@@ -69,14 +69,14 @@
         }
 
         .nav-links a:hover,
-        .nav-links a.active { /* Style for active link */
-            background-color: #004080; /* Darker shade on hover/active */
+        .nav-links a.active { 
+            background-color: #004080; 
             color: #e0e0e0;
         }
 
         /* Mobile Navigation (Hamburger Menu) */
         .nav-toggle {
-            display: none; /* Hidden by default */
+            display: none; 
             font-size: 1.8em;
             color: white;
             background: none;
@@ -86,20 +86,20 @@
 
         /* Main Content Area */
         .site-main {
-            flex-grow: 1; /* Allow main content to take available space */
+            flex-grow: 1; 
             width: 100%;
-            display: flex; /* Center the .container within main */
+            display: flex; 
             justify-content: center;
-            padding: 20px 0; /* Add some padding top/bottom */
+            padding: 20px 0; 
         }
 
         .container {
             width: 90%;
-            max-width: 900px; /* Max width for content */
-            padding: 25px; /* Increased padding */
+            max-width: 900px; 
+            padding: 25px; 
             background-color: #fff;
-            border-radius: 10px; /* Softer radius */
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Softer shadow */
+            border-radius: 10px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
         }
 
         h1, h2 {
@@ -116,10 +116,10 @@
 
         h2 { /* Section titles */
             font-size: 1.7em;
-            border-bottom: 2px solid #e9ecef; /* Lighter border */
+            border-bottom: 2px solid #e9ecef; 
             padding-bottom: 10px;
-            margin-top: 35px; /* More top margin for sections */
-            color: #0056b3; /* Consistent heading color */
+            margin-top: 35px; 
+            color: #0056b3; 
         }
 
         /* Ordered List with Roman Numerals */
@@ -172,54 +172,54 @@
 
 
         /* Table Styling */
-        .table-responsive-container { /* Wrapper for responsive table */
-            overflow-x: auto; /* Allow horizontal scrolling on small screens */
+        .table-responsive-container {
+            overflow-x: auto; 
             margin-bottom: 25px;
         }
         table.contacts-table {
             width: 100%;
-            min-width: 600px; /* Minimum width before scrolling kicks in */
+            min-width: 600px; 
             border-collapse: collapse;
             box-shadow: 0 2px 8px rgba(0,0,0,0.07);
         }
 
         table.contacts-table th, table.contacts-table td {
-            border: 1px solid #e9ecef; /* Lighter borders */
-            padding: 14px; /* Increased padding */
+            border: 1px solid #e9ecef; 
+            padding: 14px; 
             text-align: left;
         }
 
         table.contacts-table th {
-            background-color: #0069d9; /* Slightly adjusted blue */
+            background-color: #0069d9; 
             color: white;
-            font-weight: 600; /* Bolder header text */
+            font-weight: 600; 
         }
 
         table.contacts-table tbody tr:nth-child(even) {
-            background-color: #f8f9fa; /* Softer zebra striping */
+            background-color: #f8f9fa; 
         }
 
         table.contacts-table tbody tr:hover {
-            background-color: #e9ecef; /* Softer hover */
+            background-color: #e9ecef; 
         }
 
         /* Registration Form Styling */
         form.registration-form {
-            background-color: #ffffff; /* Keep form white */
-            padding: 30px; /* Increased padding */
+            background-color: #ffffff; 
+            padding: 30px; 
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             border: 1px solid #e9ecef;
         }
 
         form.registration-form .form-group {
-            margin-bottom: 22px; /* Slightly more spacing */
+            margin-bottom: 22px;
         }
 
         form.registration-form label {
             display: block;
             margin-bottom: 8px;
-            font-weight: 600; /* Bolder labels */
+            font-weight: 600; 
             color: #495057;
         }
 
@@ -232,10 +232,10 @@
         form.registration-form input[type="url"],
         form.registration-form select,
         form.registration-form textarea {
-            width: 100%; /* Full width for inputs */
-            padding: 12px 15px; /* Adjusted padding */
-            border: 1px solid #ced4da; /* Standard border color */
-            border-radius: 5px; /* Slightly more rounded */
+            width: 100%; 
+            padding: 12px 15px; 
+            border: 1px solid #ced4da; 
+            border-radius: 5px; 
             box-sizing: border-box;
             font-size: 1em;
             transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -245,8 +245,8 @@
         form.registration-form select:focus,
         form.registration-form textarea:focus {
             border-color: #007bff;
-            outline: 0; /* Remove default outline */
-            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Bootstrap-like focus */
+            outline: 0; 
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); 
         }
 
         .radio-group label, .checkbox-group label {
@@ -254,10 +254,10 @@
             margin-right: 15px;
             display: inline-flex;
             align-items: center;
-            cursor: pointer; /* Indicate clickable */
+            cursor: pointer; 
         }
         .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
-            margin-right: 8px; /* More space next to text */
+            margin-right: 8px; 
             width: auto;
             accent-color: #007bff;
         }
@@ -282,11 +282,11 @@
 
         /* Footer Styling */
         .site-footer {
-            background-color: #343a40; /* Dark footer */
-            color: #adb5bd; /* Light text for footer */
+            background-color: #343a40; 
+            color: #adb5bd; 
             text-align: center;
             padding: 1.5rem 1rem;
-            margin-top: auto; /* Push footer to bottom if content is short */
+            margin-top: auto; 
         }
         .site-footer p {
             margin: 0;
@@ -298,20 +298,20 @@
         /* Tablets and larger phones (e.g., iPads, landscape phones) */
         @media (max-width: 768px) {
             .navbar {
-                padding: 0 0.5rem; /* Reduce navbar padding */
+                padding: 0 0.5rem; 
             }
             .nav-links {
-                display: none; /* Hide nav links by default on smaller screens */
-                flex-direction: column; /* Stack them vertically when shown */
+                display: none; 
+                flex-direction: column; 
                 width: 100%;
-                background-color: #004a99; /* Slightly different background for mobile menu */
+                background-color: #004a99; 
                 position: absolute;
-                top: 60px; /* Adjust based on header height */
+                top: 60px; 
                 left: 0;
                 padding: 1rem 0;
                 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
-            .nav-links.active { /* Class to show the mobile menu */
+            .nav-links.active { 
                 display: flex;
             }
             .nav-links li {
@@ -319,7 +319,7 @@
                 text-align: center;
             }
             .nav-links a {
-                display: block; /* Make links take full width */
+                display: block; 
                 padding: 0.8rem 1rem;
                 border-bottom: 1px solid #003d7a;
             }
@@ -614,7 +614,7 @@
                     }
                     // Smooth scroll
                     window.scrollTo({
-                        top: targetElement.offsetTop - 70, // Adjust for sticky header height
+                        top: targetElement.offsetTop - 70, 
                         behavior: 'smooth'
                     });
                 }
